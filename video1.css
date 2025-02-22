@@ -4,7 +4,7 @@ body {
     padding: 0;
     font-family: Arial, sans-serif;
     text-align: center;
-    background: linear-gradient(to right,rgb(20, 7, 8),transparent),url('94b66ceeebcdbc451a3f138650e1c71d.jpg');
+    background: linear-gradient(to right, rgb(20, 7, 8), transparent), url('94b66ceeebcdbc451a3f138650e1c71d.jpg');
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -14,7 +14,7 @@ body {
     align-items: center;
 }
 
-*{
+* {
     font-family: sans-serif;
     padding: 0;
     margin: 0;
@@ -28,6 +28,7 @@ header {
     padding: 15px;
     width: 100%;
     background: rgba(0, 0, 0, 0.7);
+    flex-wrap: wrap;
 }
 
 ul {
@@ -36,10 +37,6 @@ ul {
     gap: 20px;
     list-style-type: none;
     flex-wrap: wrap;
-}
-
-li {
-    list-style: none;
 }
 
 a {
@@ -59,14 +56,14 @@ a:hover {
     border-radius: 10px;
     color: white;
     width: 90%;
-    height: 550px;
+    height: auto;
     max-width: 900px;
     margin-top: 20px;
 }
 
 .movies-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
     margin-top: 20px;
 }
@@ -75,6 +72,11 @@ a:hover {
     background: rgba(255, 255, 255, 0.1);
     padding: 15px;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.movie:hover {
+    transform: scale(1.05);
 }
 
 button {
@@ -100,6 +102,8 @@ button:hover {
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-size: cover;
+    background-position: center;
 }
 
 .video-container {
@@ -109,6 +113,14 @@ button:hover {
     color: white;
     width: 90%;
     max-width: 800px;
+}
+
+/* تحسين الخلفيات للأفلام الأخيرة */
+.hallows1-bg, .hallows2-bg {
+    background: linear-gradient(to right, #2c3e50, #34495e);
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
 .back-btn {
@@ -128,17 +140,16 @@ button:hover {
 }
 
 footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
-    width: 100%;
     width: 100%;
     background-color: #1a1a1a;
     color: #fff;
     text-align: center;
     padding: 15px 0;
     font-family: 'Arial', sans-serif;
-    margin-top: auto;
+    margin-top: 20px;
 }
 
 footer nav a {
@@ -164,10 +175,10 @@ footer nav a:hover {
     .movies-grid {
         grid-template-columns: 1fr;
     }
-    .container {
+    .container, .video-container {
         width: 95%;
     }
-    .video-container {
-        width: 95%;
+    .hallows1-bg, .hallows2-bg {
+        min-height: 80vh;
     }
 }
