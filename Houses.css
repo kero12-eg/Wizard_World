@@ -1,0 +1,106 @@
+/* تحسين التصميم وجعل الصفحة متجاوبة */
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(117, 87, 87), rgb(14, 14, 98));
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 100px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(210, 173, 6);
+    font-weight: bold;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 10px;
+}
+
+button {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 7px;
+    background-color: orangered;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: transparent;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    margin-top: auto;
+}
+
+/* تحسين التصميم للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    section {
+        flex-direction: column;
+        align-items: center;
+    }
+    img {
+        max-width: 90%;
+    }
+}

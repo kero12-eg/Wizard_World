@@ -1,0 +1,91 @@
+/* تحسينات التصميم وجعل الموقع متجاوبًا */
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+     background-image: linear-gradient(to right,#1a1717,transparent),  url(1200px-Hogwarts_model_studio_tour.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 100px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(210, 173, 6);
+    font-weight: bold;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.head{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 50px;
+    color: rgb(21, 147, 225);
+}
+
+p{
+    max-width: 600px;
+    text-align: center;
+    margin: 10px auto;
+    color: rgb(21, 147, 225);
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    margin-top: auto;
+}
+
+/* تحسين التصميم للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .head {
+        font-size: 1.8rem;
+    }
+    p {
+        width: 90%;
+    }
+}

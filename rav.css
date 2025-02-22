@@ -1,0 +1,104 @@
+/* تحسين التصميم وجعل الصفحة متجاوبة */
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(to right,rgb(102, 77, 101),rgb(3, 3, 36));
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.logo{
+    width: 100px;
+}
+
+ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(210, 173, 6);
+    font-weight: bold;
+}
+
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+article{
+    background-color:rgba(83, 70, 70, 0.9);
+    width: 90%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+
+.main{
+    font-size: 2rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.art{
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 1.6;
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* تحسين التصميم للأجهزة الصغيرة */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    article {
+        width: 95%;
+        padding: 15px;
+    }
+    .main {
+        font-size: 1.5rem;
+    }
+    .art {
+        font-size: 1rem;
+    }
+}

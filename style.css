@@ -1,0 +1,62 @@
+*{
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-image: linear-gradient(to right,rgb(48, 53, 49),rgba(10, 10, 65, 0.212),transparent),url(download.webp);
+    height: 150vh;
+    background-repeat:repeat-x;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    font: size 30px ;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: white;
+}
+ul{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+li{
+    list-style-type: none;
+    
+}
+a{
+    text-decoration: none;
+    color: aqua;
+}
+a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.head{
+    font-size: 30px;
+    font-weight: bolder;
+    translate: 40px 50px;
+}
+p{
+    width: 200px;
+    translate: 40px 70px;
+}
+.btn{
+    translate: 40px 90px;
+    width: 70px;
+    height: 30px;
+    font-weight: bolder;
+    border-radius: 7px;
+    background-color: orangered;
+}
+.btn:hover{
+    background-color: transparent;
+}

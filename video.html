@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Movies</title>
+    <link rel="stylesheet" href="video1.css">
+</head>
+<body>
+    <header>
+        <img src="d96bd054e31b424e2bc0bcd7d89f84f424b68fc056c8bc2e2c85480efb76b0dd_200.webp" alt="Harry Potter">
+        <ul>
+            <li class="home"><a href="index.html">Home</a></li>
+            <li class="house"><a href="Houses.html" class="ar">Houses</a></li>
+            <li class="video"><a href="video.html">Videos</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <h1>Harry Potter Movie Series</h1>
+        <div class="movies-grid">
+            <div class="movie">
+                <h2>Philosopher's Stone</h2>
+                <button onclick="goToMovie('video1.html')">watch</button>
+            </div>
+            <div class="movie">
+                <h2>Chamber of Secrets</h2>
+                <button onclick="goToMovie('video2.html')">Watch</button>
+            </div>
+            <div class="movie">
+                <h2>Prisoner of Azkaban</h2>
+                <button onclick="goToMovie('video3.html')">Watch</button>
+            </div>
+            <div class="movie">
+                <h2>Goblet of Fire</h2>
+                <button onclick="goToMovie('video4.html')">Watch</button>
+            </div>
+            <div class="movie">
+                <h2>Order of the Phoenix</h2>
+                <button onclick="goToMovie('video5.html')">Watch</button>
+            </div>
+            <div class="movie">
+                <h2>Half-Blood Prince</h2>
+                <button onclick="goToMovie('video6.html')">Watch</button>
+            </div>
+            <div class="movie">
+                <h2>Deathly Hallows: Part 1</h2>
+                <button onclick="goToMovie('video7.html')">Watch</button>
+            </div>
+            <div class="movie">
+                <h2>Deathly Hallows: Part 2</h2>
+                <button onclick="goToMovie('video8.html')">Watch</button>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>© 2025 Wizarding World Fan Page</p>
+        <nav>
+            <a href="index.html">Home</a> |
+            <a href="houses.html">المنازل</a> |
+            <a href="Video.html">الافلام</a>
+        </nav>
+        <p>Always believe in magic! ✨</p>
+    </footer>
+
+    <script>
+        function goToMovie(movie) {
+            window.location.href = movie;
+        }
+    </script>
+</body>
+</html>
+
